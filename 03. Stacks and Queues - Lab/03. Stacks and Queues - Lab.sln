@@ -5,9 +5,11 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Reverse a String", "1. Reverse a String\1. Reverse a String.csproj", "{3196F6E1-9F9D-40BD-8655-FABCEE2E9860}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Stack Sum", "2. Stack Sum\2. Stack Sum.csproj", "{A803B9D4-B67F-409F-A4EF-A5CCD2805AE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Stack Sum", "2. Stack Sum\2. Stack Sum.csproj", "{A803B9D4-B67F-409F-A4EF-A5CCD2805AE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Simple Calculator", "3. Simple Calculator\3. Simple Calculator.csproj", "{1EE09A5A-C8B5-4D09-B866-01A1B5A8E4A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. Simple Calculator", "3. Simple Calculator\3. Simple Calculator.csproj", "{1EE09A5A-C8B5-4D09-B866-01A1B5A8E4A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Matching Brackets", "4. Matching Brackets\4. Matching Brackets.csproj", "{09AF4D24-3D36-4FE9-9FCA-B1F679D9ED47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{1EE09A5A-C8B5-4D09-B866-01A1B5A8E4A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EE09A5A-C8B5-4D09-B866-01A1B5A8E4A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EE09A5A-C8B5-4D09-B866-01A1B5A8E4A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09AF4D24-3D36-4FE9-9FCA-B1F679D9ED47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09AF4D24-3D36-4FE9-9FCA-B1F679D9ED47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09AF4D24-3D36-4FE9-9FCA-B1F679D9ED47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09AF4D24-3D36-4FE9-9FCA-B1F679D9ED47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
