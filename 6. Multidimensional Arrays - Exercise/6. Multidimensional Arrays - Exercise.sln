@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. Snake Moves", "5. Snake 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. Jagged Array Manipulator", "6. Jagged Array Manipulator\6. Jagged Array Manipulator.csproj", "{017270C1-22E0-4963-99F4-569CF04C7742}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. Knight Game", "7. Knight Game\7. Knight Game.csproj", "{ACDB4922-BBCA-4F5C-9648-88BC3B387E71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{017270C1-22E0-4963-99F4-569CF04C7742}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{017270C1-22E0-4963-99F4-569CF04C7742}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{017270C1-22E0-4963-99F4-569CF04C7742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACDB4922-BBCA-4F5C-9648-88BC3B387E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACDB4922-BBCA-4F5C-9648-88BC3B387E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACDB4922-BBCA-4F5C-9648-88BC3B387E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACDB4922-BBCA-4F5C-9648-88BC3B387E71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
