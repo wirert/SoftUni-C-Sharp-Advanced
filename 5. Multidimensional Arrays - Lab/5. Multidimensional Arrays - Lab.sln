@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Sum Matrix Elements", "1. Sum Matrix Elements\1. Sum Matrix Elements.csproj", "{7042C9EE-4D08-4E40-9CE7-271F2EF2B556}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Sum Matrix Columns", "2. Sum Matrix Columns\2. Sum Matrix Columns.csproj", "{77BBD4B3-6019-44F9-A239-594D2F51CF8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7042C9EE-4D08-4E40-9CE7-271F2EF2B556}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7042C9EE-4D08-4E40-9CE7-271F2EF2B556}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7042C9EE-4D08-4E40-9CE7-271F2EF2B556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77BBD4B3-6019-44F9-A239-594D2F51CF8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77BBD4B3-6019-44F9-A239-594D2F51CF8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77BBD4B3-6019-44F9-A239-594D2F51CF8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77BBD4B3-6019-44F9-A239-594D2F51CF8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
