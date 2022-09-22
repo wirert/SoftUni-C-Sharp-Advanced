@@ -14,6 +14,10 @@ namespace _9._Miner
 
             char[,] matrix = new char[size, size];
 
+            int allCoals = 0;
+            int minerRow = 0;
+            int minerCol = 0;
+
             for (int row = 0; row < size; row++)
             {
                 char[] inputRow = Console.ReadLine().Split().Select(char.Parse).ToArray();
@@ -21,29 +25,18 @@ namespace _9._Miner
                 for (int col = 0; col < size; col++)
                 {
                     matrix[row, col] = inputRow[col];
-                }
-            }
 
-            int allCoals = 0;
-            int minerRow = 0;
-            int minerCol = 0;
+                    if (inputRow[col] == '*') continue;
 
-            for (int row = 0; row < size; row++)
-            {
-                for (int col = 0; col < size; col++)
-                {
-                    if (matrix[row, col] == '*') continue;
-
-                    switch (matrix[row, col])
+                    if (inputRow[col] == 'c')
                     {
-                        case 'c':
-                            allCoals++;
-                            break;
-                        case 's':
-                            minerRow = row;
-                            minerCol = col;
-                            matrix[row, col] = '*';
-                            break;
+                        allCoals++;
+                    }
+                    else if (inputRow[col] == 's')
+                    {
+                        minerRow = row;
+                        minerCol = col;
+                        matrix[row, col] = '*';
                     }
                 }
             }
