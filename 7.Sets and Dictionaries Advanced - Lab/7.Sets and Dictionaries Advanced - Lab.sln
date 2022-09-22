@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Count Same Values in Array", "01. Count Same Values in Array\01. Count Same Values in Array.csproj", "{92BDD31D-C27E-4005-9593-5056ECE379C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Average Student Grades", "02. Average Student Grades\02. Average Student Grades.csproj", "{987FD709-19CE-44EB-99DB-5FD1B6ABF6CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92BDD31D-C27E-4005-9593-5056ECE379C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92BDD31D-C27E-4005-9593-5056ECE379C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92BDD31D-C27E-4005-9593-5056ECE379C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92BDD31D-C27E-4005-9593-5056ECE379C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987FD709-19CE-44EB-99DB-5FD1B6ABF6CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987FD709-19CE-44EB-99DB-5FD1B6ABF6CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987FD709-19CE-44EB-99DB-5FD1B6ABF6CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987FD709-19CE-44EB-99DB-5FD1B6ABF6CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5D1B6A9-D6A2-41C9-A462-2ADCBC06174D}
+	EndGlobalSection
+EndGlobal
