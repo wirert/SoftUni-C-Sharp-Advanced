@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Knights of Honor", "02.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Custom Min Function", "03. Custom Min Function\03. Custom Min Function.csproj", "{8D9B8A7D-0E46-4640-9443-A99849E91DB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Find Evens or Odds", "04. Find Evens or Odds\04. Find Evens or Odds.csproj", "{4B984E6A-57E6-479C-8ADB-90E17DB37BFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8D9B8A7D-0E46-4640-9443-A99849E91DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D9B8A7D-0E46-4640-9443-A99849E91DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D9B8A7D-0E46-4640-9443-A99849E91DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B984E6A-57E6-479C-8ADB-90E17DB37BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B984E6A-57E6-479C-8ADB-90E17DB37BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B984E6A-57E6-479C-8ADB-90E17DB37BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B984E6A-57E6-479C-8ADB-90E17DB37BFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
