@@ -7,11 +7,11 @@ namespace _03._Count_Uppercase_Words
     {
         static void Main(string[] args)
         {
-            Func<string, bool> isStartWithUpper = w => char.IsUpper(w[0]);
+            Predicate<string> isStartWithUpper = w => char.IsUpper(w[0]);
 
             Console.WriteLine(string.Join(Environment.NewLine, Console.ReadLine()
                 .Split(" ", StringSplitOptions.RemoveEmptyEntries)
-                .Where(isStartWithUpper)
+                .Where(w => isStartWithUpper(w))
                 .ToArray()));
         }
     }
