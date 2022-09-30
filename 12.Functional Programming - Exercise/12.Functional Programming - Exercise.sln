@@ -5,21 +5,23 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Action Print", "01. Action Print\01. Action Print.csproj", "{23CCC321-D349-441C-94C7-25D41CFE9FC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Knights of Honor", "02. Knights of Honor\02. Knights of Honor.csproj", "{487AA959-1C2E-436A-9080-307511D39B6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Knights of Honor", "02. Knights of Honor\02. Knights of Honor.csproj", "{487AA959-1C2E-436A-9080-307511D39B6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Custom Min Function", "03. Custom Min Function\03. Custom Min Function.csproj", "{8D9B8A7D-0E46-4640-9443-A99849E91DB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Custom Min Function", "03. Custom Min Function\03. Custom Min Function.csproj", "{8D9B8A7D-0E46-4640-9443-A99849E91DB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Find Evens or Odds", "04. Find Evens or Odds\04. Find Evens or Odds.csproj", "{4B984E6A-57E6-479C-8ADB-90E17DB37BFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Find Evens or Odds", "04. Find Evens or Odds\04. Find Evens or Odds.csproj", "{4B984E6A-57E6-479C-8ADB-90E17DB37BFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Applied Arithmetics", "05. Applied Arithmetics\05. Applied Arithmetics.csproj", "{B2D9A9E8-D0DF-402B-83AF-AF236FB056EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. Applied Arithmetics", "05. Applied Arithmetics\05. Applied Arithmetics.csproj", "{B2D9A9E8-D0DF-402B-83AF-AF236FB056EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Reverse And Exclude", "06. Reverse And Exclude\06. Reverse And Exclude.csproj", "{B190A929-157D-475A-8E45-8152607D4978}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. Reverse And Exclude", "06. Reverse And Exclude\06. Reverse And Exclude.csproj", "{B190A929-157D-475A-8E45-8152607D4978}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Predicate For Names", "07. Predicate For Names\07. Predicate For Names.csproj", "{8F388080-5062-4703-A3BA-B0998506BE42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. Predicate For Names", "07. Predicate For Names\07. Predicate For Names.csproj", "{8F388080-5062-4703-A3BA-B0998506BE42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. List Of Predicates", "08. List Of Predicates\08. List Of Predicates.csproj", "{FF69E2A6-7E1B-491C-B4B7-31FC12277011}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08. List Of Predicates", "08. List Of Predicates\08. List Of Predicates.csproj", "{FF69E2A6-7E1B-491C-B4B7-31FC12277011}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Predicate Party!", "09. Predicate Party!\09. Predicate Party!.csproj", "{9BE97E2B-4025-4585-B2A7-A23D80AD7A4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09. Predicate Party!", "09. Predicate Party!\09. Predicate Party!.csproj", "{9BE97E2B-4025-4585-B2A7-A23D80AD7A4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. The Party Reservation Filter Module", "10. The Party Reservation Filter Module\10. The Party Reservation Filter Module.csproj", "{CE5AF07D-55DD-4663-B37E-FC3B402A7A70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{9BE97E2B-4025-4585-B2A7-A23D80AD7A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BE97E2B-4025-4585-B2A7-A23D80AD7A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BE97E2B-4025-4585-B2A7-A23D80AD7A4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE5AF07D-55DD-4663-B37E-FC3B402A7A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE5AF07D-55DD-4663-B37E-FC3B402A7A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE5AF07D-55DD-4663-B37E-FC3B402A7A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE5AF07D-55DD-4663-B37E-FC3B402A7A70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

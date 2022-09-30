@@ -7,16 +7,16 @@ namespace _05._Applied_Arithmetics
     {
         static void Main(string[] args)
         {
-            Func<string, int, int> calculate = (a, c) =>
+            Func<string, int, int> calculate = (action, num) =>
             {
-                switch (a)
+                switch (action)
                 {
-                    case "add": return c + 1;
-                    case "subtract": return c - 1;
-                    case "multiply": return c * 2;
+                    case "add": return ++num;
+                    case "subtract": return --num;
+                    case "multiply": return num * 2;
                     default:
-                        Console.Write($"{c} ");
-                        return c;
+                        Console.Write($"{num} ");
+                        return num;
                 }
             };
 
