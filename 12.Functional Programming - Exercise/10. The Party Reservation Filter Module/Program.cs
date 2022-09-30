@@ -8,18 +8,6 @@ namespace _10._The_Party_Reservation_Filter_Module
     {
         static void Main(string[] args)
         {
-            Func<string, string, Predicate<string>> getFilter = (condition, value) =>
-            {
-                switch (condition)
-                {
-                    case "Starts with": return name => name.StartsWith(value);
-                    case "Ends with": return name => name.EndsWith(value);
-                    case "Length": return name => name.Length == int.Parse(value);
-                    case "Contains": return name => name.Contains(value);
-                }
-                return null;
-            };
-            
             Dictionary<string, Predicate<string>> filters = new Dictionary<string, Predicate<string>>();
             
             List<string> names = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).ToList();
@@ -36,7 +24,7 @@ namespace _10._The_Party_Reservation_Filter_Module
 
                 if (action == "Add filter")
                 {
-                   filters.Add(condition + value, getFilter(condition, value)); 
+                   filters.Add(condition + value, GetFilter(condition, value)); 
                 }
                 else
                 {
@@ -50,6 +38,19 @@ namespace _10._The_Party_Reservation_Filter_Module
             }
 
             Console.WriteLine(string.Join(" ", names));
+        }
+
+        private static Predicate<string> GetFilter(string condition, string value)
+        {
+            switch (condition)
+            {
+                case "Starts with": return name => name.StartsWith(value);
+                case "Ends with": return name => name.EndsWith(value);
+                case "Length": return name => name.Length == int.Parse(value);
+                case "Contains": return name => name.Contains(value);
+            }
+
+            return null;
         }
     }
 }

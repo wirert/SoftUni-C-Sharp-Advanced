@@ -7,7 +7,7 @@ namespace _05._Applied_Arithmetics
     {
         static void Main(string[] args)
         {
-            Func<string, int, int> calculate = (action, num) =>
+            Func<string, int, int> performCalculation = (action, num) =>
             {
                 switch (action)
                 {
@@ -30,7 +30,7 @@ namespace _05._Applied_Arithmetics
             {
                 for (int i = 0; i < input.Length; i++)
                 {
-                    input[i] = calculate(action, input[i]);
+                    input[i] = performCalculation(action, input[i]);
                 }
 
                 if (action == "print")
