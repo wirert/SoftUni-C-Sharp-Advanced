@@ -29,22 +29,24 @@ namespace _08._List_Of_Predicates
 
                 Console.Write($"{num} ");
             }
-
-
-            //Action<int, HashSet<int>> PrintIfDivisible = (i, nums) =>
-            //{
-            //    if (nums.Any(num => i % num != 0))
-            //    {
-            //        return;
-            //    }
-
-            //    Console.Write($"{i} ");
-            //};
-
-            //for (int i = 1; i <= range; i++)
-            //{
-            //    PrintIfDivisible(i, dividers);
-            //}
         }
     }
 }
+
+//Another solution:
+
+//Action<int, HashSet<int>> PrintIfDivisible = (i, nums) =>
+//{
+//    if (nums.Any(num => i % num != 0))
+//    {
+//        return;
+//    }
+
+//    Console.Write($"{i} ");
+//};
+
+//for (int i = 1; i <= range; i++)
+//{
+//    PrintIfDivisible(i, dividers);
+//}
+
