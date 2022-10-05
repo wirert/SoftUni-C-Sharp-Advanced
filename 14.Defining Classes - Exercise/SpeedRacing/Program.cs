@@ -21,7 +21,7 @@ namespace SpeedRacing
                 modelsCars.Add(model, new Car(model, fuel, fuelConsumption));
             }
 
-            string[] command = Console.ReadLine().Split(' ',StringSplitOptions.RemoveEmptyEntries);
+            string[] command = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
             while (command[0] != "End")
             {
