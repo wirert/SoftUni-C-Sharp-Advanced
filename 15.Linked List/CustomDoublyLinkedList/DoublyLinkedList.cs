@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace CustomDoublyLinkedList
 {
@@ -115,6 +116,21 @@ namespace CustomDoublyLinkedList
             }
 
             return array;
+        }
+
+        public void PrintList()
+        {
+            Node currNode = this.head;
+
+            StringBuilder sb = new StringBuilder();
+
+            while (currNode != null)
+            {
+                sb.Append($"{currNode.Value} ");
+                currNode = currNode.NextNode;
+            }
+
+            Console.WriteLine(sb.ToString().TrimEnd());
         }
     }
 }
