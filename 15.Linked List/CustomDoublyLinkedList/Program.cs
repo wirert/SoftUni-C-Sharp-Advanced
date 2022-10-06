@@ -20,6 +20,8 @@ namespace CustomDoublyLinkedList
             list.AddLast(43);
             list.AddFirst(-57);
 
+            list.ForEach(i => Console.Write($"{i} "));
+
             list.PrintList();
         }
     }
