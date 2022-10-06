@@ -41,6 +41,13 @@ namespace CustomListClass
             customList.Capacity = 4;
             Console.WriteLine("Capacity:" + customList.Capacity);
 
+            customList.Insert(0, 60);
+
+            customList.ForEach(x => Console.Write(x + " "));
+            Console.WriteLine();
+
+            
+            Console.WriteLine("Capacity:" + customList.Capacity);
 
         }
     }

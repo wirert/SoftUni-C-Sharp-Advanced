@@ -26,7 +26,7 @@ namespace CustomListClass
                 {
                     throw new ArgumentException();
                 }
-               
+
                 this.ChangeCapacity(value);
             }
         }
@@ -73,13 +73,29 @@ namespace CustomListClass
             }
         }
 
+        public void Insert(int index, int item)
+        {
+            CheckIndex(index);
+
+            if (this.Count == this.Capacity)
+            {
+                Resize();
+            }
+
+            this.ShiftLeft(index);
+
+            this.items[index] = item;
+            this.Count++;
+
+        }
+
         public int RemoveAt(int index)
         {
             CheckIndex(index);
 
             int item = this.items[index];
 
-            this.Shift(index);
+            this.ShiftRight(index);
 
             this.items[this.Count - 1] = default(int);
             this.Count--;
@@ -145,7 +161,7 @@ namespace CustomListClass
         }
 
         private void Resize()
-        {           
+        {
             int[] resized = new int[this.Capacity * 2];
 
             for (int i = 0; i < this.Count; i++)
@@ -168,11 +184,19 @@ namespace CustomListClass
             items = resized;
         }
 
-        private void Shift(int index)
+        private void ShiftRight(int index)
         {
             for (int i = index; i < this.Count - 1; i++)
             {
                 this.items[i] = this.items[i + 1];
+            }
+        }
+
+        private void ShiftLeft(int index)
+        {
+            for (int i = this.Count; i > index; i--)
+            {
+                this.items[i] = this.items[i - 1];
             }
         }
 
