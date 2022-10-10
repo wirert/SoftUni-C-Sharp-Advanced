@@ -1,6 +1,6 @@
 ﻿namespace GenericBoxOfString
 {
-    internal class Box<T>
+    public class Box<T>
     {
         public Box(T value)
         {
@@ -11,7 +11,7 @@
         
         public override string ToString()
         {
-            return $"{this.Value.GetType()}: {this.Value}";
+            return $"{typeof(T)}: {this.Value}";
         }
     }
 }

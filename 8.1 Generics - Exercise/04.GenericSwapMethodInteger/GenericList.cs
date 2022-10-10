@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GenericSwapMethodStrings
+namespace _04.GenericSwapMethodInteger
 {
     public class GenericList<T>
     {

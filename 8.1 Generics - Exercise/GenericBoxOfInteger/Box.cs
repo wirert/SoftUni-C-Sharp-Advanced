@@ -1,6 +1,6 @@
 ﻿namespace GenericBoxOfInteger
 {
-    internal class Box<T> where T : struct
+    public class Box<T> where T : struct
     {
         public Box(T value)
         {
@@ -11,7 +11,7 @@
         
         public override string ToString()
         {
-            return $"{this.Value.GetType()}: {this.Value}";
+            return $"{typeof(T)}: {this.Value}";
         }
     }
 }
