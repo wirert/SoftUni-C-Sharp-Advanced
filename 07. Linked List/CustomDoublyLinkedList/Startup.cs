@@ -2,11 +2,11 @@
 
 namespace CustomDoublyLinkedList
 {
-    public class Program
+    public class Startup
     {
         static void Main(string[] args)
         {
-            DoublyLinkedList list = new DoublyLinkedList();
+            DoublyLinkedList<int> list = new DoublyLinkedList<int>();
 
             for (int i = 1; i <= 10; i++)
             {
@@ -21,6 +21,7 @@ namespace CustomDoublyLinkedList
             list.AddFirst(-57);
 
             list.ForEach(i => Console.Write($"{i} "));
+            Console.WriteLine();
 
             list.PrintList();
         }

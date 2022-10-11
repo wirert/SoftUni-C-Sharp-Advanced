@@ -3,23 +3,23 @@ using System.Text;
 
 namespace CustomDoublyLinkedList
 {
-    public class DoublyLinkedList
+    public class DoublyLinkedList<T>
     {
-        private Node head;
-        private Node tail;
+        private Node<T> head;
+        private Node<T> tail;
 
         public int Count { get; private set; }
 
-        public void AddLast(int value)
+        public void AddLast(T value)
         {
             if (this.Count == 0)
             {
-                this.head = new Node(value);
+                this.head = new Node<T>(value);
                 this.tail = this.head;
             }
             else
             {
-                Node newTail = new Node(value);
+                Node<T> newTail = new Node<T>(value);
                 newTail.PreviousNode = this.tail;
                 this.tail.NextNode = newTail;
                 this.tail = newTail;
@@ -28,16 +28,16 @@ namespace CustomDoublyLinkedList
             this.Count++;
         }
 
-        public void AddFirst(int value)
+        public void AddFirst(T value)
         {
             if (Count == 0)
             {
-                this.head = new Node(value);
+                this.head = new Node<T>(value);
                 this.tail = this.head;
             }
             else
             {
-                Node newHead = new Node(value);
+                Node<T> newHead = new Node<T>(value);
                 newHead.NextNode = this.head;
                 this.head.PreviousNode = newHead;
                 this.head = newHead;
@@ -46,14 +46,14 @@ namespace CustomDoublyLinkedList
             this.Count++;
         }
 
-        public int RemoveFirst()
+        public T RemoveFirst()
         {
             if (Count == 0)
             {
                 throw new InvalidOperationException("This List Is Empty");
             }
 
-            int currValue = this.head.Value;
+            T currValue = this.head.Value;
             this.head = this.head.NextNode;
 
             if (this.head == null)
@@ -69,14 +69,14 @@ namespace CustomDoublyLinkedList
             return currValue;
         }
 
-        public int RemoveLast()
+        public T RemoveLast()
         {
             if (Count == 0)
             {
                 throw new InvalidOperationException("This List Is Empty");
             }
 
-            int currValue = this.tail.Value;
+            T currValue = this.tail.Value;
             this.tail = this.tail.PreviousNode;
 
             if (this.tail == null)
@@ -92,7 +92,7 @@ namespace CustomDoublyLinkedList
             return currValue;
         }
 
-        public void ForEach(Action<int> action)
+        public void ForEach(Action<T> action)
         {
             var currNode = this.head;
 
@@ -103,9 +103,9 @@ namespace CustomDoublyLinkedList
             }
         }
 
-        public int[] ToArray()
+        public T[] ToArray()
         {
-            int[] array = new int[this.Count];
+            T[] array = new T[this.Count];
 
             var currNode = this.head;
 
@@ -120,7 +120,7 @@ namespace CustomDoublyLinkedList
 
         public void PrintList()
         {
-            Node currNode = this.head;
+            Node<T> currNode = this.head;
 
             StringBuilder sb = new StringBuilder();
 

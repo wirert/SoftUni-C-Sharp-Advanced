@@ -2,15 +2,15 @@
 
 namespace CustomListClass
 {
-    public class CustomList
+    public class CustomList<T>
     {
         private const int InitialCapacity = 2;
 
-        private int[] items;
+        private T[] items;
 
         public CustomList()
         {
-            this.items = new int[InitialCapacity];
+            this.items = new T[InitialCapacity];
         }
 
         public int Count { get; private set; }
@@ -30,7 +30,7 @@ namespace CustomListClass
                 this.ChangeCapacity(value);
             }
         }
-        public int this[int index]
+        public T this[int index]
         {
             get
             {
@@ -54,7 +54,7 @@ namespace CustomListClass
             }
         }
 
-        public void Add(int element)
+        public void Add(T element)
         {
             if (this.Count == this.Capacity)
             {
@@ -65,7 +65,7 @@ namespace CustomListClass
             this.Count++;
         }
 
-        public void AddRange(int[] elements)
+        public void AddRange(T[] elements)
         {
             foreach (var element in elements)
             {
@@ -73,7 +73,7 @@ namespace CustomListClass
             }
         }
 
-        public void Insert(int index, int item)
+        public void Insert(int index, T item)
         {
             CheckIndex(index);
 
@@ -89,15 +89,15 @@ namespace CustomListClass
 
         }
 
-        public int RemoveAt(int index)
+        public T RemoveAt(int index)
         {
             CheckIndex(index);
 
-            int item = this.items[index];
+            T item = this.items[index];
 
             this.ShiftRight(index);
 
-            this.items[this.Count - 1] = default(int);
+            this.items[this.Count - 1] = default(T);
             this.Count--;
 
             if (this.Count <= this.Capacity / 4)
@@ -121,30 +121,30 @@ namespace CustomListClass
             }
         }
 
-        public bool Contains(int element)
-        {
-            foreach (var item in this.items)
-            {
-                if (item == element)
-                {
-                    return true;
-                }
-            }
+        //public bool Contains(T element)
+        //{
+        //    foreach (var item in this.items)
+        //    {
+        //        if (item.CompareTo(element) == 0)
+        //        {
+        //            return true;
+        //        }
+        //    }
 
-            return false;
-        }
+        //    return false;
+        //}
 
         public void Swap(int firstIndex, int secondIndex)
         {
             this.CheckIndex(firstIndex);
             this.CheckIndex(secondIndex);
 
-            int copy = this.items[firstIndex];
+            T copy = this.items[firstIndex];
             this.items[firstIndex] = this.items[secondIndex];
             this.items[secondIndex] = copy;
         }
 
-        public void ForEach(Action<int> action)
+        public void ForEach(Action<T> action)
         {
             for (int i = 0; i < this.Count; i++)
             {
@@ -152,17 +152,17 @@ namespace CustomListClass
             }
         }
 
-        public int[] ToArray() => this.items;
+        public T[] ToArray() => this.items;
 
         public void Clear()
         {
-            this.items = new int[InitialCapacity];
+            this.items = new T[InitialCapacity];
             this.Count = 0;
         }
 
         private void Resize()
         {
-            int[] resized = new int[this.Capacity * 2];
+            T[] resized = new T[this.Capacity * 2];
 
             for (int i = 0; i < this.Count; i++)
             {
@@ -174,7 +174,7 @@ namespace CustomListClass
 
         private void Shrink()
         {
-            int[] resized = new int[this.Capacity / 2];
+            T[] resized = new T[this.Capacity / 2];
 
             for (int i = 0; i < this.Count; i++)
             {
@@ -202,7 +202,7 @@ namespace CustomListClass
 
         private void ChangeCapacity(int capacity)
         {
-            int[] resized = new int[capacity];
+            T[] resized = new T[capacity];
 
             for (int i = 0; i < this.Count; i++)
             {

@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace CustomListClass
 {
-    public class Program
+    public class Startup
     {
         static void Main(string[] args)
         {
-            CustomList customList = new CustomList();
+            CustomList<int> customList = new CustomList<int>();
 
             customList.Add(1);
             customList.AddRange(new[] { 2, 3, 4, 5, 6, 7, 8 });
@@ -24,8 +23,8 @@ namespace CustomListClass
 
             customList.RemoveAt(1);
 
-            Console.WriteLine(customList.Contains(50));
-            Console.WriteLine(customList.Contains(4));
+            //Console.WriteLine(customList.Contains(50));
+            //Console.WriteLine(customList.Contains(4));
 
             customList.ForEach(x => Console.Write(x + " "));
             Console.WriteLine();
