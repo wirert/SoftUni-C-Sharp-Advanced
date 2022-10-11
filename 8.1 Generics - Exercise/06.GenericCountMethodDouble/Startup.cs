@@ -1,22 +1,21 @@
 ﻿using System;
-using System.Linq;
 
-namespace _05.GenericCountMethodString
+namespace _06.GenericCountMethodDouble
 {
-    internal class Startup
+    public class Startup
     {
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
 
-            GenericList<string> list = new GenericList<string>();
+            GenericList<double> list = new GenericList<double>();
 
             for (int i = 0; i < n; i++)
             {
-                list.List.Add(Console.ReadLine());
+                list.List.Add(double.Parse(Console.ReadLine()));
             }
 
-            string elementToCompare = Console.ReadLine();
+            double elementToCompare = double.Parse(Console.ReadLine());
 
             int count = list.CompareAndCount(elementToCompare);
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _05.GenericCountMethodString
+namespace _06.GenericCountMethodDouble
 {
     public class GenericList<T> where T : IComparable<T>
     {
