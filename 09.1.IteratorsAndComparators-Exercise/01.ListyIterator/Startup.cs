@@ -38,6 +38,17 @@ namespace _01.ListyIterator
                         }
 
                         break;
+                    case "PrintAll":
+                        try
+                        {
+                            listy.PrintAll();
+                        }
+                        catch (InvalidOperationException exeption)
+                        {
+                            Console.WriteLine(exeption.Message);
+                        }
+
+                        break;
                 }
             }
         }
