@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 
 namespace IteratorsAndComparators
@@ -11,13 +10,14 @@ namespace IteratorsAndComparators
         public Library(params Book[] books)
         {
             this.books = new List<Book>(books);
+            this.books.Sort();
         }
-
+       
         public IEnumerator<Book> GetEnumerator() => new LibraryIterator(this.books);
 
         IEnumerator IEnumerable.GetEnumerator() => this.GetEnumerator();
-
-
+        
+        
         private class LibraryIterator : IEnumerator<Book>
         {
             private readonly List<Book> books;
