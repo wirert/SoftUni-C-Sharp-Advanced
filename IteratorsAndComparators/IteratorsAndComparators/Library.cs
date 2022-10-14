@@ -1,23 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace IteratorsAndComparators
 {
     public class Library : IEnumerable<Book>
     {
-        private List<Book> books;
+        private SortedSet<Book> books;
 
         public Library(params Book[] books)
         {
-            this.books = new List<Book>(books);
-            this.books.Sort();
+            this.books = new SortedSet<Book>(books, new BookComparator());
         }
-       
-        public IEnumerator<Book> GetEnumerator() => new LibraryIterator(this.books);
+
+        public IEnumerator<Book> GetEnumerator() => new LibraryIterator(this.books.ToList());
 
         IEnumerator IEnumerable.GetEnumerator() => this.GetEnumerator();
-        
-        
+
+
         private class LibraryIterator : IEnumerator<Book>
         {
             private readonly List<Book> books;
