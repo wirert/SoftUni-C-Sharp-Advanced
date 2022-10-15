@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ListyIterator", "01.ListyIterator\01.ListyIterator.csproj", "{90A849D8-48E4-4837-9EFC-B0E4DBBD9EE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Stack", "03.Stack\03.Stack.csproj", "{103B6C50-4D3C-4E65-8E6F-DC0D3D4D5C2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{90A849D8-48E4-4837-9EFC-B0E4DBBD9EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90A849D8-48E4-4837-9EFC-B0E4DBBD9EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90A849D8-48E4-4837-9EFC-B0E4DBBD9EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{103B6C50-4D3C-4E65-8E6F-DC0D3D4D5C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{103B6C50-4D3C-4E65-8E6F-DC0D3D4D5C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{103B6C50-4D3C-4E65-8E6F-DC0D3D4D5C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{103B6C50-4D3C-4E65-8E6F-DC0D3D4D5C2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
