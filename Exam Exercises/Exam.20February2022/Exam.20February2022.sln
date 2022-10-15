@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.BakeryShop", "01.BakeryS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.BeaverAtWork", "02.BeaverAtWork\02.BeaverAtWork.csproj", "{6D4F2341-9CCA-486E-A968-5820E958CA61}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FishingNet", "FishingNet\FishingNet.csproj", "{23D48C4C-B8F4-4826-A8DF-A8AA2060F6E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6D4F2341-9CCA-486E-A968-5820E958CA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D4F2341-9CCA-486E-A968-5820E958CA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D4F2341-9CCA-486E-A968-5820E958CA61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23D48C4C-B8F4-4826-A8DF-A8AA2060F6E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D48C4C-B8F4-4826-A8DF-A8AA2060F6E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D48C4C-B8F4-4826-A8DF-A8AA2060F6E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D48C4C-B8F4-4826-A8DF-A8AA2060F6E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
