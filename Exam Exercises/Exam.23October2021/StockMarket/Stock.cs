@@ -9,14 +9,14 @@ namespace StockMarket
             CompanyName = companyName;
             Director = director;
             PricePerShare = pricePerShare;
-            TotalNumberOfShares = totalNumberOfShares;            
+            TotalNumberOfShares = totalNumberOfShares;
         }
 
-        public string	CompanyName { get; set; }
-        public string	Director { get; set; }
-        public decimal	PricePerShare { get; set; }
-        public int	TotalNumberOfShares { get; set; }
-        public decimal	MarketCapitalization { get { return PricePerShare * TotalNumberOfShares; } }
+        public string CompanyName { get; set; }
+        public string Director { get; set; }
+        public decimal PricePerShare { get; set; }
+        public int TotalNumberOfShares { get; set; }
+        public decimal MarketCapitalization { get { return PricePerShare * TotalNumberOfShares; } }
 
         public override string ToString()
         {

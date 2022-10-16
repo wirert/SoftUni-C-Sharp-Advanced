@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
@@ -16,10 +15,10 @@ namespace StockMarket
             Portfolio = new List<Stock>();
         }
 
-        public string	FullName { get; set; }
-        public string	EmailAddress { get; set; }
-        public decimal	MoneyToInvest { get; set; }
-        public string 	BrokerName { get; set; }
+        public string FullName { get; set; }
+        public string EmailAddress { get; set; }
+        public decimal MoneyToInvest { get; set; }
+        public string BrokerName { get; set; }
         public List<Stock> Portfolio { get; private set; }
         public int Count { get { return Portfolio.Count; } }
 
@@ -36,7 +35,7 @@ namespace StockMarket
         {
             var stock = Portfolio.FirstOrDefault(s => s.CompanyName == companyName);
 
-            if (stock == null) return $"{companyName} does not exist.";            
+            if (stock == null) return $"{companyName} does not exist.";
 
             if (sellPrice < stock.PricePerShare) return $"Cannot sell {companyName}.";
 
