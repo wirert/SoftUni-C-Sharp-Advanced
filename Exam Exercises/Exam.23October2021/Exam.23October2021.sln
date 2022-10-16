@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.FoodFinder", "01.FoodFinder\01.FoodFinder.csproj", "{ECAA730D-0759-40EE-A374-90552FBE8C38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.PawnWars", "02.PawnWars\02.PawnWars.csproj", "{9B3DF3B8-BF8C-4A65-8996-E8AA5C71B3EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{ECAA730D-0759-40EE-A374-90552FBE8C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECAA730D-0759-40EE-A374-90552FBE8C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECAA730D-0759-40EE-A374-90552FBE8C38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B3DF3B8-BF8C-4A65-8996-E8AA5C71B3EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B3DF3B8-BF8C-4A65-8996-E8AA5C71B3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B3DF3B8-BF8C-4A65-8996-E8AA5C71B3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B3DF3B8-BF8C-4A65-8996-E8AA5C71B3EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
