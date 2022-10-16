@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Blacksmith", "01.Blacksmith\01.Blacksmith.csproj", "{FB60377A-D43E-4A1B-8935-DAE9F033D25E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Armory", "02.Armory\02.Armory.csproj", "{81BCB59E-B39C-44A1-BEF7-4C9E9AA5E239}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FB60377A-D43E-4A1B-8935-DAE9F033D25E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB60377A-D43E-4A1B-8935-DAE9F033D25E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB60377A-D43E-4A1B-8935-DAE9F033D25E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81BCB59E-B39C-44A1-BEF7-4C9E9AA5E239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81BCB59E-B39C-44A1-BEF7-4C9E9AA5E239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81BCB59E-B39C-44A1-BEF7-4C9E9AA5E239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81BCB59E-B39C-44A1-BEF7-4C9E9AA5E239}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
