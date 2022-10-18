@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Lootbox", "01.Lootbox\01.Lootbox.csproj", "{6FEF4B8A-41F7-4139-86FE-8FD1B54115B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Guild", "Guild\Guild.csproj", "{B9ED5B71-DA35-4E88-AB47-874FB2507CC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.ReVolt", "02.ReVolt\02.ReVolt.csproj", "{7A7A24A3-7BBA-48C8-9027-188F960C3059}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FEF4B8A-41F7-4139-86FE-8FD1B54115B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FEF4B8A-41F7-4139-86FE-8FD1B54115B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FEF4B8A-41F7-4139-86FE-8FD1B54115B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FEF4B8A-41F7-4139-86FE-8FD1B54115B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9ED5B71-DA35-4E88-AB47-874FB2507CC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9ED5B71-DA35-4E88-AB47-874FB2507CC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9ED5B71-DA35-4E88-AB47-874FB2507CC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9ED5B71-DA35-4E88-AB47-874FB2507CC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A7A24A3-7BBA-48C8-9027-188F960C3059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A7A24A3-7BBA-48C8-9027-188F960C3059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A7A24A3-7BBA-48C8-9027-188F960C3059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A7A24A3-7BBA-48C8-9027-188F960C3059}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07D66E81-0B70-404F-B006-E9DC5A78950E}
+	EndGlobalSection
+EndGlobal
