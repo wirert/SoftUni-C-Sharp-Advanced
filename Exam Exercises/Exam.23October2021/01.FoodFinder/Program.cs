@@ -11,13 +11,9 @@ namespace _01.FoodFinder
             Word[] words =
             {  new Word("pear"), new Word("flour"), new Word("pork"), new Word("olive") };
 
-            var vowels = new Queue<char>(Console.ReadLine()
-                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
-                .Select(char.Parse).ToArray());
+            var vowels = new Queue<char>(Console.ReadLine().ToCharArray());
 
-            var consonants = new Stack<char>(Console.ReadLine()
-                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
-                .Select(char.Parse).ToArray());
+            var consonants = new Stack<char>(Console.ReadLine().ToCharArray());
 
             while (consonants.Count != 0)
             {
