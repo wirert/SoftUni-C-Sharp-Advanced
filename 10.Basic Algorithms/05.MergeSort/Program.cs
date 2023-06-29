@@ -8,7 +8,7 @@ namespace _05.MergeSort
     {
         static void Main(string[] args)
         {
-            int[] arr = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
+            int[] arr = Console.ReadLine().Split(", ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
 
             Console.WriteLine(String.Join(" ", MergeSort(arr.ToList())));
         }
